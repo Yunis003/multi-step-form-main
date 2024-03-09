@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="./app.js" defer></script>
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+     <div class="left">
+
+      <div class="inner">
+
+        <div class="textarea">
+          <span>1</span>
+        </div>
+        <div class="infoarea">
+          <p>STEP 1</p>
+          <h4>YOUR INFO</h4>
+        </div>
+
+      </div>
+
+
+      <div class="inner">
+
+        <div class="textarea2 molen">
+          <span>2</span>
+        </div>
+        <div class="infoarea">
+          <p>STEP 2</p>
+          <h4>SELECT PLAN</h4>
+        </div>
+
+      </div>
+
+
+      <div class="inner">
+
+        <div class="textarea3 molen">
+          <span>3</span>
+        </div>
+        <div class="infoarea">
+          <p>STEP 3</p>
+          <h4>ADD-ONS</h4>
+        </div>
+
+      </div>
+
+
+      <div class="inner">
+
+        <div class="textarea4 molen">
+          <span>4</span>
+        </div>
+        <div class="infoarea">
+          <p>STEP 4</p>
+          <h4>SUMMARY</h4>
+        </div>
+
+      </div>
+
+
+
+     </div>
+     <div class="right">
+
+      <div class="form1">
+      <h1>Personal Info</h1>
+      <p>Please provide your name, email adress, and phone number.</p>
+    
+      <label for="name">Name</label>
+      <input type="text" name="name" placeholder="Please include your name..." class="input1" required>
+      <span class="error">This field is required</span>
+      <label for="email">Email Address</label>
+      <input type="email" name="email" placeholder="Please include your e-mail..." required class="input2">
+      <span class="error">This field is required</span>
+      <label for="number">Phone Number</label>
+      <input type="text" name="number" placeholder="Please include your phone number.." required class="input3">
+      <span class="error">This field is required</span>
+    </div>
+
+
+    <div class="form2">
+      <h1>Select Your Plan</h1>
+      <p>You have the option of monthly or yearly billing</p>
+      <div class="cont">
+       <div class="card selected">
+         <div><img src="./assets/group1.png" alt="icon"></div>
+         <div>
+           <h4 class="type">Arcade</h4>
+           <p class="priced">$9/mo</p>
+         </div>
+       </div>
+
+       <div class="card">
+         <div><img src="./assets/group1.png" alt="icon"></div>
+         <div>
+           <h4 class="type">Advanced</h4>
+           <p class="priced">$12/mo</p>
+         </div>
+       </div>
+
+       <div class="card">
+         <div><img src="./assets/group1.png" alt="icon"></div>
+         <div>
+           <h4 class="type">Pro</h4>
+           <p class="priced">$15/mo</p>
+         </div>
+       </div>
+       
+      </div>
+    </div>
+
+    <div class="form3">
+      <h1>Pick Add-Ons</h1>
+      <p>Add-ons help enhance your gaming experience</p>
+
+      <div class="select selected2">
+        <input type="checkbox">
+        <div>
+          <h4 class="anotherService">Online service</h4>
+          <p>Access to multiplayer games</p>
+        </div>
+        <span class="priced2">+$1/mo</span>
+      </div>
+
+      <div class="select">
+        <input type="checkbox">
+        <div>
+          <h4 class="anotherService">Larger storage</h4>
+          <p>Extra 1TB of cloud save</p>
+        </div>
+        <span class="priced2">+$2/mo</span>
+      </div>
+
+      <div class="select">
+        <input type="checkbox">
+        <div>
+          <h4 class="anotherService">Customizable profile</h4>
+          <p>Custom theme on your profile</p>
+        </div>
+        <span class="priced2">+$2/mo</span>
+      </div>
+
+     </div>
+
+     <div class="form4">
+      <h1>Finishing up</h1>
+      <p>Double-check everything looks OK before confirming</p>
+
+      <div class="grays">
+        <div>
+          <h4><span class="finalType">Arcade</span>(Monthyl) </h4>
+          <p class="typePrice">$0/mo</p>
+        </div>
+        <hr>
+        <div class="bl1">
+          <p class="service1">Online service</p>
+          <span class="cash1">+$0/mo</span>
+        </div>
+        <!-- <div class="bl2">
+          <p class="service2">Larger storage</p>
+          <span class="cash2">+$0/mo</span>
+        </div> -->
+      </div>
+
+      <div class="total">
+        <p>Total(per month)</p>
+        <h3 class="ttlCas" style="color:blueviolet">+$ <span class="ttlCash">0</span> /mo</h3>
+      </div>
+     </div>
+
+     <div class="confirm">
+       <h1>Thank You !</h1>
+       <p>Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at supoort@loremgaming.com</p>
+     </div>
+
+
+
+     </div>
+<!-- 
+     <div class="form2">
+       <h1>Select Your Plan</h1>
+       <p>You have the option of monthly or yearly billing</p>
+       <div class="cont">
+        <div class="card">
+          <div><img src="./assets/group1.png" alt="icon"></div>
+          <div>
+            <h4>Arcade</h4>
+            <p>$9/mo</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div><img src="./assets/group1.png" alt="icon"></div>
+          <div>
+            <h4>Arcade</h4>
+            <p>$9/mo</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div><img src="./assets/group1.png" alt="icon"></div>
+          <div>
+            <h4>Arcade</h4>
+            <p>$9/mo</p>
+          </div>
+        </div>
+        
+       </div>
+     </div> -->
+
+     <!-- <div class="form3">
+      <h1>Pick Add-Ons</h1>
+      <p>Add-ons help enhance your gaming experience</p>
+
+      <div class="select">
+        <input type="checkbox">
+        <div>
+          <h4>Online service</h4>
+          <p>Access to multiplayer games</p>
+        </div>
+        <span>+$1/mo</span>
+      </div>
+
+      <div class="select">
+        <input type="checkbox">
+        <div>
+          <h4>Online service</h4>
+          <p>Access to multiplayer games</p>
+        </div>
+        <span>+$1/mo</span>
+      </div>
+
+      <div class="select">
+        <input type="checkbox">
+        <div>
+          <h4>Online service</h4>
+          <p>Access to multiplayer games</p>
+        </div>
+        <span>+$1/mo</span>
+      </div>
+
+     </div> -->
+
+
+    
+     <button class="preBtn">Go Back</button>
+     <button class="nextBtn" type="submit">Next Step</button>
+   </div>
+
+   <!-- <button class="preBtn">Go Back</button>
+   <button class="nextBtn">Next Step</button> -->
+
+   </div>
+
+   
+
+
+<!--     
+     <button class="preBtn">Go Back</button>
+     <button class="nextBtn">Next Step</button> -->
+  </div>
+</body>
+</html>
