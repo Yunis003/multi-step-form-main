@@ -44,6 +44,7 @@ let textareas=[textarea2,textarea3,textarea4]
 
        if(current<4 && validateInput()){
         forms[current].style.display='none'
+        textareas[current].style.backgroundColor='#BEE2FD'   //*??!
         current++
         forms[current].style.display='flex'
         preBtn.style.display='block'
@@ -113,20 +114,20 @@ select.forEach((se)=>{
     let service1=document.querySelector('.service1')
     let cash1=document.querySelector('.cash1')
     let ttlCash=document.querySelector('.ttlCash')
+
     finalType.textContent=obj.plan.innerText
     typePrice.textContent=obj.price.innerText
     service1.textContent=obj2.plan2.innerText
     cash1.textContent=obj2.price2.innerText
 
-    let num1=cash1.textContent
-    let num2=typePrice.textContent
-   ttlCash.textContent=num1+num2
-
+    
+    ttlCash.textContent=parseFloat(obj.price.innerText)+parseFloat(obj2.price2.innerText)
+    //? finalMark end
  
 
-      
     })
 
+//?evvelki page qayitmaq background removla
     preBtn.addEventListener('click',function(){
         if(current<=4){
             forms[current].style.display='none'
